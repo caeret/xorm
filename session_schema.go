@@ -12,8 +12,8 @@ import (
 	"os"
 	"strings"
 
-	"xorm.io/xorm/internal/utils"
-	"xorm.io/xorm/schemas"
+	"github.com/caeret/xorm/internal/utils"
+	"github.com/caeret/xorm/schemas"
 )
 
 // Ping test if database is ok

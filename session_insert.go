@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"strings"
 
-	"xorm.io/xorm/internal/utils"
-	"xorm.io/xorm/schemas"
+	"github.com/caeret/xorm/internal/utils"
+	"github.com/caeret/xorm/schemas"
 )
 
 // ErrNoElementsOnSlice represents an error there is no element when insert
