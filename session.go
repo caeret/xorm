@@ -59,7 +59,7 @@ const (
 type Session struct {
 	engine                 *Engine
 	tx                     *core.Tx
-	statement              *statements.Statement
+	statement              statements.Statement
 	isAutoCommit           bool
 	isCommitedOrRollbacked bool
 	isAutoClose            bool
