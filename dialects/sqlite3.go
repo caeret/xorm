@@ -12,8 +12,8 @@ import (
 	"regexp"
 	"strings"
 
-	"xorm.io/xorm/core"
-	"xorm.io/xorm/schemas"
+	"github.com/caeret/xorm/core"
+	"github.com/caeret/xorm/schemas"
 )
 
 var (

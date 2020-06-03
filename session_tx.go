@@ -7,7 +7,7 @@ package xorm
 import (
 	"time"
 
-	"xorm.io/xorm/log"
+	"github.com/caeret/xorm/log"
 )
 
 // Begin a transaction
