@@ -138,6 +138,12 @@ func newSession(engine *Engine) *Session {
 	}
 }
 
+// Clone copy all the session's content and return a new session
+func (session *Session) Clone() *Session {
+	var sess = *session
+	return &sess
+}
+
 // Close release the connection from pool
 func (session *Session) Close() error {
 	for _, v := range session.stmtCache {
