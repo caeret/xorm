@@ -157,7 +157,7 @@ func (TestType) TableName() string {
 	return "TestTable"
 }
 
-func createTestStatement() (*Statement, error) {
+func createTestStatement() (Statement, error) {
 	statement := NewStatement(dialect, tagParser, time.Local)
 	if err := statement.SetRefValue(reflect.ValueOf(TestType{})); err != nil {
 		return nil, err

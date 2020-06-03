@@ -80,8 +80,8 @@ type Statement struct {
 }
 
 // NewStatement creates a new statement
-func NewStatement(dialect dialects.Dialect, tagParser *tags.Parser, defaultTimeZone *time.Location) *Statement {
-	statement := &Statement{
+func NewStatement(dialect dialects.Dialect, tagParser *tags.Parser, defaultTimeZone *time.Location) Statement {
+	statement := Statement{
 		dialect:         dialect,
 		tagParser:       tagParser,
 		defaultTimeZone: defaultTimeZone,
