@@ -136,7 +136,7 @@ func (statement *Statement) Reset() {
 	statement.RawParams = make([]interface{}, 0)
 	statement.UseCache = true
 	statement.UseAutoTime = true
-	statement.NoAutoCondition = false
+	statement.NoAutoCondition = true
 	statement.IsDistinct = false
 	statement.IsForUpdate = false
 	statement.TableAlias = ""
