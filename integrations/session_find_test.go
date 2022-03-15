@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"xorm.io/xorm"
-	"xorm.io/xorm/internal/utils"
-	"xorm.io/xorm/names"
+	"github.com/caeret/xorm"
+	"github.com/caeret/xorm/internal/utils"
+	"github.com/caeret/xorm/names"
 
 	"github.com/stretchr/testify/assert"
 )

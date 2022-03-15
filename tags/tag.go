@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"xorm.io/xorm/schemas"
+	"github.com/caeret/xorm/schemas"
 )
 
 type tag struct {
