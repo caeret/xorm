@@ -174,6 +174,14 @@ func (session *Session) Close() error {
 	return nil
 }
 
+// Clone copy all the session's content and return a new session
+func (session *Session) Clone() *Session {
+	var sess = *session
+	var stat = *sess.statement
+	sess.statement = &stat
+	return &sess
+}
+
 func (session *Session) db() *core.DB {
 	return session.engine.db
 }
