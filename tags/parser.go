@@ -14,11 +14,11 @@ import (
 	"time"
 	"unicode"
 
-	"xorm.io/xorm/caches"
-	"xorm.io/xorm/convert"
-	"xorm.io/xorm/dialects"
-	"xorm.io/xorm/names"
-	"xorm.io/xorm/schemas"
+	"github.com/caeret/xorm/caches"
+	"github.com/caeret/xorm/convert"
+	"github.com/caeret/xorm/dialects"
+	"github.com/caeret/xorm/names"
+	"github.com/caeret/xorm/schemas"
 )
 
 // ErrUnsupportedType represents an unsupported type error

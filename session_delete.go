@@ -10,9 +10,9 @@ import (
 	"strconv"
 
 	"xorm.io/builder"
-	"xorm.io/xorm/caches"
-	"xorm.io/xorm/internal/utils"
-	"xorm.io/xorm/schemas"
+	"github.com/caeret/xorm/caches"
+	"github.com/caeret/xorm/internal/utils"
+	"github.com/caeret/xorm/schemas"
 )
 
 var (

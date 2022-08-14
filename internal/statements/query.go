@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	"xorm.io/builder"
-	"xorm.io/xorm/internal/utils"
-	"xorm.io/xorm/schemas"
+	"github.com/caeret/xorm/internal/utils"
+	"github.com/caeret/xorm/schemas"
 )
 
 // GenQuerySQL generate query SQL

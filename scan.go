@@ -11,10 +11,10 @@ import (
 	"reflect"
 	"time"
 
-	"xorm.io/xorm/convert"
-	"xorm.io/xorm/core"
-	"xorm.io/xorm/dialects"
-	"xorm.io/xorm/schemas"
+	"github.com/caeret/xorm/convert"
+	"github.com/caeret/xorm/core"
+	"github.com/caeret/xorm/dialects"
+	"github.com/caeret/xorm/schemas"
 )
 
 // genScanResultsByBeanNullabale generates scan result
