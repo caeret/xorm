@@ -58,11 +58,11 @@ func TestAutoTransaction(t *testing.T) {
 	engine := testEngine.(*xorm.Engine)
 
 	// will success
-	_, err := engine.Transaction(func(session *xorm.Session) (interface{}, error) {
+	err := engine.Transaction(func(session *xorm.Session) error {
 		_, err := session.Insert(TestTx{Msg: "hi"})
 		assert.NoError(t, err)
 
-		return nil, nil
+		return nil
 	})
 	assert.NoError(t, err)
 
@@ -71,11 +71,11 @@ func TestAutoTransaction(t *testing.T) {
 	assert.EqualValues(t, true, has)
 
 	// will rollback
-	_, err = engine.Transaction(func(session *xorm.Session) (interface{}, error) {
+	err = engine.Transaction(func(session *xorm.Session) error {
 		_, err := session.Insert(TestTx{Msg: "hello"})
 		assert.NoError(t, err)
 
-		return nil, fmt.Errorf("rollback")
+		return fmt.Errorf("rollback")
 	})
 	assert.Error(t, err)
 
